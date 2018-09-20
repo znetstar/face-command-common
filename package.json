@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha test/index.js",
     "docs": "grunt docs",
-    "build": "grunt ts",
+    "build": "grunt build",
     "prepublish": "npm run build"
   },
   "author": "Zachary Boyd <zachary@zacharyboyd.nyc>",
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-ts": "^6.0.0-beta.21",
     "grunt-typedoc": "^0.2.4",
     "mocha": "^5.2.0",

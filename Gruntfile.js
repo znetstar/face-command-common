@@ -12,6 +12,7 @@ module.exports = function(grunt) {
                 src: ['./src/**/*']
             }
         },
+        clean: ["lib"],
         ts: {
             default : {
               outDir: "lib",
@@ -22,8 +23,10 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-typedoc');
     grunt.loadNpmTasks("grunt-ts");
+    grunt.loadNpmTasks('grunt-contrib-clean');
     
-    grunt.registerTask('default', ['ts']);
+    grunt.registerTask('build', ['clean', 'ts']);
+    grunt.registerTask('default', ['build']);
 
     grunt.registerTask('docs', ['typedoc']);
 };

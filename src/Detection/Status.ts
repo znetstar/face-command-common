@@ -51,8 +51,8 @@ export default class Status {
     /**
      * List of faces detected by {@link IDetectionService}.
      */
-    public get RecognizedFaceIDs():Face[] { return this.recognizedFaceIDs; }
-    public set RecognizedFaceIDs(value: Face[]) { this.recognizedFaceIDs = value; }
+    public get RecognizedFaces():Face[] { return this.recognizedFaces; }
+    public set RecognizedFaces(value: Face[]) { this.recognizedFaces = value; }
 
     /**
      * String representation of StatusType.
@@ -67,7 +67,7 @@ export default class Status {
      * @param statusType - State of {@link IDetectionService}.
      * @param recognizedFaceIDs - List of faces detected by {@link IDetectionService}.
      */
-    constructor(private id: number, private statusType: StatusType, private recognizedFaceIDs: Face[] = []) {
+    constructor(private id: number, private statusType: StatusType, private recognizedFaces: Face[] = []) {
 
     }
 }

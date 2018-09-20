@@ -6,7 +6,7 @@ module.exports = function(grunt) {
                 options: {
                     module: 'commonjs',
                     out: './docs',
-                    name: 'face-defense-common',
+                    name: 'face-command-common',
                     target: 'es2018'
                 },
                 src: ['./src/**/*']

@@ -1,7 +1,7 @@
 {
-  "name": "face-defense-common",
+  "name": "face-command-common",
   "version": "1.0.0",
-  "description": "This package contains the common types and methods used in Face Defense <https://github.com/znetstar/face-defense>",
+  "description": "This package contains the common types and methods used in Face Command <https://github.com/znetstar/face-command>",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test",
@@ -13,7 +13,7 @@
   "license": "AGPL-3.0-or-later",
   "repository": {
     "type": "git",
-    "url": "https://github.com/znetstar/face-defense-common"
+    "url": "https://github.com/znetstar/face-command-common"
   },
   "devDependencies": {
     "grunt": "^1.0.3",

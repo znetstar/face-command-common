@@ -1,6 +1,14 @@
 import Face from "../Faces/Face";
 import Command from "./Command";
-import { IncorrectRunConditionTypeToSetFaces } from "../Errors";
+
+/**
+ * Error that will be throw if a user attempts to set the "FacesToRecognize" field on "RunCondition" when the "ReconditionType" does indicate "FacesToRecognize" needs to be set. 
+ */
+export class IncorrectRunConditionTypeToSetFaces extends Error {
+    constructor(runConditionType: RunConditionType) {
+        super(`Incorrect "RunConditionType" "${Number(runConditionType)}" to set "FacesToRecognize". Must be "RunOnSpecificFacesRecognized" or "RunOnSpecificFacesNoLongerRecognized".`);
+    }
+}
 
 /**
  * Possible conditions for the command to be triggered.

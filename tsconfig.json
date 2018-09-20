@@ -18,7 +18,6 @@
         "src/Detection/IDetectionService.ts",
         "src/Detection/DetectionOptions.ts",
         "src/Detection/EigenFaceRecognizerOptions.ts",
-        "src/Errors.ts",
         "src/Faces/Face.ts",
         "src/Faces/IFaceManagementService.ts",
         "src/index.ts",

@@ -7,9 +7,5 @@ export { default as DetectionOptions } from "./Detection/DetectionOptions";
 export { default as EigenFaceRecognizerOptions } from "./Detection/EigenFaceRecognizerOptions";
 export { default as Face } from "./Faces/Face";
 export { default as IFaceManagementService } from "./Faces/IFaceManagementService";
-export { default as RunCondition, RunConditionType } from "./Commands/RunCondition";
+export { default as RunCondition, RunConditionType, IncorrectRunConditionTypeToSetFaces } from "./Commands/RunCondition";
 export { default as Status } from "./Detection/Status";
-
-export { 
-    IncorrectRunConditionTypeToSetFaces
-} from "./Errors";

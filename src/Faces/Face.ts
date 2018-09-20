@@ -15,10 +15,10 @@ export default class Face {
     public set Name(value: string) { this.name = value; }
 
     /**
-     * An `ArrayBuffer` containing an image of the face.
+     * A `Buffer` containing an image of the face.
      */
-    public get Image():ArrayBuffer { return this.image; }
-    public set Image(value: ArrayBuffer) { this.image = value; }
+    public get Image():Buffer { return this.image; }
+    public set Image(value: Buffer) { this.image = value; }
 
     /**
      * If the face should be automatically loaded when the application starts.
@@ -33,7 +33,7 @@ export default class Face {
      * @param image - An `ArrayBuffer` containing an image of the face.
      * @param autostart - If the face should be automatically loaded when the application starts.
      */
-    constructor(private id: number, private name: string, private image: ArrayBuffer, private autostart : boolean = false) {
+    constructor(private id: number, private name: string, private image: Buffer, private autostart : boolean = false) {
 
     }
 }

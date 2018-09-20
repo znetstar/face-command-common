@@ -11,7 +11,7 @@ export default interface IFaceManagementService {
      * @param autostart - If the face should be loaded on application start.
      * @async
      */
-    AddFace(image: ArrayBuffer, name: string, autostart: boolean): Promise<Face>;
+    AddFace(image: Buffer, name: string, autostart: boolean): Promise<Face>;
     
     /**
      * Adds a face from the capture source.

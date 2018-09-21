@@ -1,4 +1,6 @@
 import DetectionOptions from "./DetectionOptions";
+import Status, { StatusType } from "./Status";
+import Face from "../Faces/Face";
 
 /**
  * Represents a service that will monitor the capture source for faces or lack thereof.
@@ -30,4 +32,24 @@ export default interface IDetectionService {
      * Indicates if detection is currently running.
      */
     IsDetectionRunning: boolean;
+
+    /**
+     * Creates a status object indicating a change in state.
+     */
+    AddStatus(statusType: StatusType, time: Date, recognizedFaces: Face[], lastStatus?: Status): Status;
+
+    /**
+     * Retrieves a status object.
+     * 
+     * @param id - The id of the status to retrieve;
+     */
+    GetStatus(id: number): Status;
+
+    /**
+     * Searches for entries between a start and end date.
+     * 
+     * @param start - The start date for the query.
+     * @param end - The end date for the query.
+     */
+    StatusHistory(start?: Date, end?: Date): Status[];
 }

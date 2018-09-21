@@ -8,4 +8,4 @@ export { default as EigenFaceRecognizerOptions } from "./Detection/EigenFaceReco
 export { default as Face } from "./Faces/Face";
 export { default as IFaceManagementService } from "./Faces/IFaceManagementService";
 export { default as RunCondition, RunConditionType, IncorrectRunConditionTypeToSetFaces } from "./Commands/RunCondition";
-export { default as Status } from "./Detection/Status";
+export { default as Status, StatusType } from "./Detection/Status";

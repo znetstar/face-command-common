@@ -59,12 +59,6 @@ export default class Status {
      */
     public get RecognizedFaces():Face[] { return this.recognizedFaces; }
     public set RecognizedFaces(value: Face[]) { this.recognizedFaces = value; }
-    
-    /** 
-     * The last status that occured
-     */
-    public get LastStatus(): Status { return this.lastStatus; }
-    public set LastStatus(value: Status) { this.lastStatus = value; }
 
     /**
      * String representation of StatusType.
@@ -81,7 +75,7 @@ export default class Status {
      * @param recognizedFaceIDs - List of faces detected by {@link IDetectionService}.
      * @param lastStatus - The last status that occured.
      */
-    constructor(private id: number, private statusType: StatusType, private time: Date = new Date(), private recognizedFaces: Face[] = [], private lastStatus?: Status) {
+    constructor(private id: number, private statusType: StatusType, private time: Date = new Date(), private recognizedFaces: Face[] = []) {
         
     }
 }

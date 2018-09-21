@@ -36,7 +36,7 @@ export default interface IDetectionService {
     /**
      * Creates a status object indicating a change in state.
      */
-    AddStatus(statusType: StatusType, time: Date, recognizedFaces: Face[], lastStatus?: Status): Status;
+    AddStatus(statusType: StatusType, time: Date, recognizedFaces: Face[]): Status;
 
     /**
      * Retrieves a status object.

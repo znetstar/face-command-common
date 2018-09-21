@@ -20,8 +20,9 @@ export default interface IDetectionService {
 
     /**
      * Begins capturing from the capture source.
+     * @param options - Options for detection.
      */
-    StartDetection(): void;
+    StartDetection(options: DetectionOptions): void;
 
     /**
      * Indicates if detection is currently running.

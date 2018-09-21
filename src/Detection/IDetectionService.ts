@@ -12,12 +12,7 @@ export default interface IDetectionService {
      * @param options - Options that will be used during detection.
      */
     DetectChanges(options: DetectionOptions): void;
-
-    /**
-     * The options that will be passed to "DetectChanges". 
-     */
-    DetectionOptions: DetectionOptions;
-
+    
     /**
      * Stops capturing from the capture source
      */

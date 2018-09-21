@@ -35,21 +35,24 @@ export default interface IDetectionService {
 
     /**
      * Creates a status object indicating a change in state.
+     * @async
      */
-    AddStatus(statusType: StatusType, time: Date, recognizedFaces: Face[]): Status;
+    AddStatus(statusType: StatusType, time: Date, recognizedFaces: Face[]): Promise<Status>;
 
     /**
      * Retrieves a status object.
      * 
      * @param id - The id of the status to retrieve;
+     * @async
      */
-    GetStatus(id: number): Status;
+    GetStatus(id: number): Promise<Status>;
 
     /**
      * Searches for entries between a start and end date.
      * 
      * @param start - The start date for the query.
      * @param end - The end date for the query.
+     * @async
      */
-    StatusHistory(start?: Date, end?: Date): Status[];
+    StatusHistory(start?: Date, end?: Date): Promise<Status[]>;
 }

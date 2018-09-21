@@ -117,7 +117,7 @@
 					<div class="tsd-signature tsd-kind-icon">Detection<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="../classes/_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L19">Detection/IDetectionService.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L19">Detection/IDetectionService.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +132,7 @@
 					<div class="tsd-signature tsd-kind-icon">Is<wbr>Detection<wbr>Running<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L34">Detection/IDetectionService.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L34">Detection/IDetectionService.ts:34</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -148,19 +148,23 @@
 					<a name="addstatus" class="tsd-anchor"></a>
 					<h3>Add<wbr>Status</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Status<span class="tsd-signature-symbol">(</span>statusType<span class="tsd-signature-symbol">: </span><a href="../enums/_detection_status_.statustype.html" class="tsd-signature-type">StatusType</a>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, recognizedFaces<span class="tsd-signature-symbol">: </span><a href="../classes/_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a></li>
+						<li class="tsd-signature tsd-kind-icon">Add<wbr>Status<span class="tsd-signature-symbol">(</span>statusType<span class="tsd-signature-symbol">: </span><a href="../enums/_detection_status_.statustype.html" class="tsd-signature-type">StatusType</a>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, recognizedFaces<span class="tsd-signature-symbol">: </span><a href="../classes/_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L39">Detection/IDetectionService.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L40">Detection/IDetectionService.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Creates a status object indicating a change in state.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -174,7 +178,7 @@
 									<h5>recognizedFaces: <a href="../classes/_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -188,7 +192,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L14">Detection/IDetectionService.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L14">Detection/IDetectionService.ts:14</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,19 +218,23 @@
 					<a name="getstatus" class="tsd-anchor"></a>
 					<h3>Get<wbr>Status</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Status<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a></li>
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Status<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L46">Detection/IDetectionService.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L48">Detection/IDetectionService.ts:48</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Retrieves a status object.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -237,7 +245,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -251,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L29">Detection/IDetectionService.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L29">Detection/IDetectionService.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -267,19 +275,23 @@
 					<a name="statushistory" class="tsd-anchor"></a>
 					<h3>Status<wbr>History</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">Status<wbr>History<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">Status<wbr>History<span class="tsd-signature-symbol">(</span>start<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span>, end<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L54">Detection/IDetectionService.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L57">Detection/IDetectionService.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
 									<p>Searches for entries between a start and end date.</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -296,7 +308,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">[]</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -310,7 +322,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/a1b8f89/src/Detection/IDetectionService.ts#L24">Detection/IDetectionService.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9b9cefd/src/Detection/IDetectionService.ts#L24">Detection/IDetectionService.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

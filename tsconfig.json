@@ -11,17 +11,6 @@
         "outDir": "lib"
     },
     "files": [
-        "src/Commands/Command.ts",
-        "src/Commands/ICommandType.ts",
-        "src/Commands/CommandOptions.ts",
-        "src/Commands/ICommandService.ts",
-        "src/Detection/IDetectionService.ts",
-        "src/Detection/DetectionOptions.ts",
-        "src/Detection/EigenFaceRecognizerOptions.ts",
-        "src/Faces/Face.ts",
-        "src/Faces/IFaceManagementService.ts",
-        "src/index.ts",
-        "src/Commands/RunCondition.ts",
-        "src/Detection/Status.ts"
+        "src/index.ts"
     ]
 }

@@ -1,14 +1,14 @@
 import Face from "../Faces/Face";
 
 /**
- * Possible states of {@link IDetectionService}.
+ * Possible states of {@link DetectionServiceBase}.
  */
 export enum StatusType {
-    NoFacesDetected,
-    FacesDetected,
-    FacesRecognized,
-    FacesNoLongerRecognized,
-    FacesNoLongerDetected    
+    NoFacesDetected = 0,
+    FacesDetected = 1,
+    FacesRecognized = 2,
+    FacesNoLongerRecognized = 3,
+    FacesNoLongerDetected = 4
 }
 
 /**
@@ -26,7 +26,7 @@ const StatusText = new Map<StatusType, string>([
 Object.freeze(StatusText);
 
 /**
- * Represents a change in status of {@link IDetectionService}.
+ * Represents a change in status of {@link DetectionServiceBase}.
  */
 export default class Status {
     /**
@@ -38,33 +38,10 @@ export default class Status {
     }
 
     /**
-     * Unqiue ID for this status object.
-     */
-    public get ID():number { return this.id; }
-
-    /**
-     * State of {@link IDetectionService}.  
-     */
-    public get StatusType():StatusType { return this.statusType; }
-    public set StatusType(value: StatusType) { this.statusType = value; }
-
-    /**
-     * When the status occured
-     */
-    public get Time(): Date { return this.time; }
-    public set Time(value: Date) { this.time = value; }
-
-    /**
-     * List of faces detected by {@link IDetectionService}.
-     */
-    public get RecognizedFaces():Face[] { return this.recognizedFaces; }
-    public set RecognizedFaces(value: Face[]) { this.recognizedFaces = value; }
-
-    /**
      * String representation of StatusType.
      */
     public toString():string {
-        return Status.StatusToString(this.StatusType);
+        return Status.StatusToString(this.statusType);
     }
 
     /**
@@ -75,7 +52,7 @@ export default class Status {
      * @param recognizedFaceIDs - List of faces detected by {@link IDetectionService}.
      * @param lastStatus - The last status that occured.
      */
-    constructor(private id: number, private statusType: StatusType, private time: Date = new Date(), private recognizedFaces: Face[] = []) {
+    constructor(public id: number, public statusType: StatusType, public time: Date = new Date(), public recognizedFaces: Face[] = []) {
         
     }
 }

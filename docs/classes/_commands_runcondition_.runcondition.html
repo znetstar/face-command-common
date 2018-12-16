@@ -97,6 +97,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_commands_runcondition_.runcondition.html#commandid" class="tsd-kind-icon">command<wbr>Id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_commands_runcondition_.runcondition.html#facestorecognize" class="tsd-kind-icon">faces<wbr>ToRecognize</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_commands_runcondition_.runcondition.html#id" class="tsd-kind-icon">id</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_commands_runcondition_.runcondition.html#runconditiontype" class="tsd-kind-icon">run<wbr>Condition<wbr>Type</a></li>
@@ -111,13 +112,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Run<wbr>Condition<span class="tsd-signature-symbol">(</span>runConditionType<span class="tsd-signature-symbol">: </span><a href="../enums/_commands_runcondition_.runconditiontype.html" class="tsd-signature-type">RunConditionType</a>, facesToRecognize<span class="tsd-signature-symbol">?: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span>, id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_commands_runcondition_.runcondition.html" class="tsd-signature-type">RunCondition</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Run<wbr>Condition<span class="tsd-signature-symbol">(</span>runConditionType<span class="tsd-signature-symbol">: </span><a href="../enums/_commands_runcondition_.runconditiontype.html" class="tsd-signature-type">RunConditionType</a>, facesToRecognize<span class="tsd-signature-symbol">?: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span>, id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, commandId<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_commands_runcondition_.runcondition.html" class="tsd-signature-type">RunCondition</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/de5e5b5/src/Commands/RunCondition.ts#L29">Commands/RunCondition.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/8f2c362/src/Commands/RunCondition.ts#L29">Commands/RunCondition.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -148,6 +149,14 @@
 										</div>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> commandId: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>ID for the parent command.</p>
+										</div>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_commands_runcondition_.runcondition.html" class="tsd-signature-type">RunCondition</a></h4>
 						</li>
@@ -157,12 +166,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="commandid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> command<wbr>Id</h3>
+					<div class="tsd-signature tsd-kind-icon">command<wbr>Id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/8f2c362/src/Commands/RunCondition.ts#L37">Commands/RunCondition.ts:37</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>ID for the parent command.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="facestorecognize" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagOptional">Optional</span> faces<wbr>ToRecognize</h3>
 					<div class="tsd-signature tsd-kind-icon">faces<wbr>ToRecognize<span class="tsd-signature-symbol">:</span> <a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/de5e5b5/src/Commands/RunCondition.ts#L36">Commands/RunCondition.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/8f2c362/src/Commands/RunCondition.ts#L37">Commands/RunCondition.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/de5e5b5/src/Commands/RunCondition.ts#L36">Commands/RunCondition.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/8f2c362/src/Commands/RunCondition.ts#L37">Commands/RunCondition.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">run<wbr>Condition<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../enums/_commands_runcondition_.runconditiontype.html" class="tsd-signature-type">RunConditionType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/de5e5b5/src/Commands/RunCondition.ts#L36">Commands/RunCondition.ts:36</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/8f2c362/src/Commands/RunCondition.ts#L37">Commands/RunCondition.ts:37</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -223,6 +247,9 @@
 					</li>
 					<li class="current tsd-kind-external-module">
 						<a href="../modules/_commands_runcondition_.html">"<wbr>Commands/<wbr>Run<wbr>Condition"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_constructible_.html">"<wbr>Constructible"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_detection_detectionoptions_.html">"<wbr>Detection/<wbr>Detection<wbr>Options"</a>
@@ -265,6 +292,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_commands_runcondition_.runcondition.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_commands_runcondition_.runcondition.html#commandid" class="tsd-kind-icon">command<wbr>Id</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_commands_runcondition_.runcondition.html#facestorecognize" class="tsd-kind-icon">faces<wbr>ToRecognize</a>

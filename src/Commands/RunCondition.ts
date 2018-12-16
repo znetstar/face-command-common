@@ -32,8 +32,8 @@ export default class RunCondition {
      * @param runConditionType - The condition need to trigger the command.
      * @param facesToRecognize  - Faces that will allow the condition to be met.
      * @param id - Unique ID for the run condition.
+     * @param commandId - ID for the parent command.
      */
-    constructor (public runConditionType: RunConditionType, public facesToRecognize?: Face[], public id?: number) {
-
+    constructor (public runConditionType: RunConditionType, public facesToRecognize?: Face[], public id?: number, public commandId?: number) {
     }
 }

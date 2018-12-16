@@ -17,7 +17,7 @@ export default abstract class FaceManagementServiceBase {
      * @param autostart - If the face should be loaded on application start.
      * @async
      */
-    public abstract AddFace(image: Buffer, name: string, autostart: boolean): Promise<Face>;
+    public abstract AddFace(image: Uint8Array, name: string, autostart: boolean): Promise<Face>;
     
     /**
      * Adds a face from the capture source.

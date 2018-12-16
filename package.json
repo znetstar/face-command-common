@@ -10,7 +10,7 @@
     "prepublish": "npm run build"
   },
   "author": "Zachary Boyd <zachary@zacharyboyd.nyc>",
-  "license": "AGPL-3.0-or-later",
+  "license": "LGPL-3.0-only",
   "repository": {
     "type": "git",
     "url": "https://github.com/znetstar/face-command-common"

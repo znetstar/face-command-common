@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>FaceManagementServiceBase | face-command-common</title>
+	<title>ConfigServiceBase | face-command-common</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_faces_facemanagementservicebase_.html">&quot;Faces/FaceManagementServiceBase&quot;</a>
+					<a href="../modules/_configservicebase_.html">&quot;ConfigServiceBase&quot;</a>
 				</li>
 				<li>
-					<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html">FaceManagementServiceBase</a>
+					<a href="_configservicebase_.configservicebase.html">ConfigServiceBase</a>
 				</li>
 			</ul>
-			<h1>Class FaceManagementServiceBase</h1>
+			<h1>Class ConfigServiceBase</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,8 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Represents a service that can manage faces stored by the application.</p>
+						<p>Represents a service that can get/set config values.
+						Logs are also emitted via the class.</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +81,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">FaceManagementServiceBase</span>
+						<span class="target">ConfigServiceBase</span>
 					</li>
 				</ul>
 			</section>
@@ -91,24 +92,24 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#resources" class="tsd-kind-icon">resources</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="_configservicebase_.configservicebase.html#resources" class="tsd-kind-icon">resources</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#addface" class="tsd-kind-icon">Add<wbr>Face</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#addfacefromcamera" class="tsd-kind-icon">Add<wbr>Face<wbr>From<wbr>Camera</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#getface" class="tsd-kind-icon">Get<wbr>Face</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#getfaces" class="tsd-kind-icon">Get<wbr>Faces</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#removeface" class="tsd-kind-icon">Remove<wbr>Face</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#updateface" class="tsd-kind-icon">Update<wbr>Face</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#getconfig" class="tsd-kind-icon">Get<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#getconfigvalue" class="tsd-kind-icon">Get<wbr>Config<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#loadconfig" class="tsd-kind-icon">Load<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#saveconfig" class="tsd-kind-icon">Save<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#setconfig" class="tsd-kind-icon">Set<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_configservicebase_.configservicebase.html#setconfigvalue" class="tsd-kind-icon">Set<wbr>Config<wbr>Value</a></li>
 							</ul>
 						</section>
 					</div>
@@ -120,13 +121,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Face<wbr>Management<wbr>Service<wbr>Base<span class="tsd-signature-symbol">(</span>resources<span class="tsd-signature-symbol">: </span><a href="../interfaces/_iappresources_.iappresources.html" class="tsd-signature-type">IAppResources</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_faces_facemanagementservicebase_.facemanagementservicebase.html" class="tsd-signature-type">FaceManagementServiceBase</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Config<wbr>Service<wbr>Base<span class="tsd-signature-symbol">(</span>resources<span class="tsd-signature-symbol">: </span><a href="../interfaces/_iappresources_.iappresources.html" class="tsd-signature-type">IAppResources</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_configservicebase_.configservicebase.html" class="tsd-signature-type">ConfigServiceBase</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L7">Faces/FaceManagementServiceBase.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L7">ConfigServiceBase.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -142,7 +143,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_faces_facemanagementservicebase_.facemanagementservicebase.html" class="tsd-signature-type">FaceManagementServiceBase</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_configservicebase_.configservicebase.html" class="tsd-signature-type">ConfigServiceBase</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -155,7 +156,7 @@
 					<div class="tsd-signature tsd-kind-icon">resources<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_iappresources_.iappresources.html" class="tsd-signature-type">IAppResources</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L11">Faces/FaceManagementServiceBase.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L11">ConfigServiceBase.ts:11</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -168,21 +169,47 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addface" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Add<wbr>Face</h3>
+					<a name="getconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Get<wbr>Config</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Face<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, autostart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L20">Faces/FaceManagementServiceBase.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L32">ConfigServiceBase.ts:32</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds face which will be extracted from the provided image.</p>
+									<p>Retrieves all configuration properties.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getconfigvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Get<wbr>Config<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Get<wbr>Config<wbr>Value<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L18">ConfigServiceBase.ts:18</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Retrieves a configuration property.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>async</dt>
@@ -192,44 +219,84 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>image: <span class="tsd-signature-type">Uint8Array</span></h5>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Image to extract the face from.</p>
-									</div>
-								</li>
-								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Friendly name for the face.</p>
-									</div>
-								</li>
-								<li>
-									<h5>autostart: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>If the face should be loaded on application start.</p>
+										<p>Configuration property to retrieve.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addfacefromcamera" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Add<wbr>Face<wbr>From<wbr>Camera</h3>
+					<a name="loadconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Load<wbr>Config</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Face<wbr>From<wbr>Camera<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, autostart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Load<wbr>Config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L28">Faces/FaceManagementServiceBase.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L54">ConfigServiceBase.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Adds a face from the capture source.</p>
+									<p>Loads the configuration from the underlying source (e.g. file).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="saveconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Save<wbr>Config</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Save<wbr>Config<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L47">ConfigServiceBase.ts:47</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Saves the configuration the underlying source (e.g. a file).</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>async</dt>
+									<dd></dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setconfig" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Set<wbr>Config</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Config<span class="tsd-signature-symbol">(</span>object<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, parentKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L40">ConfigServiceBase.ts:40</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets multiple configuration properties</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>async</dt>
@@ -239,111 +306,15 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<h5>object: <span class="tsd-signature-type">any</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Friendly name for the face.</p>
+										<p>An object containing keys and values to set.</p>
 									</div>
 								</li>
 								<li>
-									<h5>autostart: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> parentKey: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>If the face should be loaded on application start.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getface" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Get<wbr>Face</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Face<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L35">Faces/FaceManagementServiceBase.ts:35</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieves a face by the its identifier.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The identifier of the face.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getfaces" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Get<wbr>Faces</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Faces<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L41">Faces/FaceManagementServiceBase.ts:41</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieves all faces.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="removeface" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Remove<wbr>Face</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Remove<wbr>Face<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L48">Faces/FaceManagementServiceBase.ts:48</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Removes a face by the its identifier.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The identifier of the face.</p>
+										<p>The key of the parent configuration property to apply the changes to. Defaults to the root object.</p>
 									</div>
 								</li>
 							</ul>
@@ -352,21 +323,21 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="updateface" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Update<wbr>Face</h3>
+					<a name="setconfigvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Set<wbr>Config<wbr>Value</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Update<wbr>Face<span class="tsd-signature-symbol">(</span>face<span class="tsd-signature-symbol">: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a>, scanForFace<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, imageFromCamera<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Set<wbr>Config<wbr>Value<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/Faces/FaceManagementServiceBase.ts#L57">Faces/FaceManagementServiceBase.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/9c77bcb/src/ConfigServiceBase.ts#L26">ConfigServiceBase.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Updates a face.</p>
+									<p>Sets a configuration property.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>async</dt>
@@ -376,25 +347,19 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>face: <a href="_faces_face_.face.html" class="tsd-signature-type">Face</a></h5>
+									<h5>key: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Face with properties to be updated.</p>
+										<p>Configuration property to set.</p>
 									</div>
 								</li>
 								<li>
-									<h5>scanForFace: <span class="tsd-signature-type">boolean</span></h5>
+									<h5>value: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>Indicates whether the application should extract a face from the updated image.</p>
-									</div>
-								</li>
-								<li>
-									<h5>imageFromCamera: <span class="tsd-signature-type">boolean</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Indicates whether the application should update the face object with a face from the capture source.</p>
+										<p>Value to set.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -421,7 +386,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_commands_runcondition_.html">"<wbr>Commands/<wbr>Run<wbr>Condition"</a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_configservicebase_.html">"<wbr>Config<wbr>Service<wbr>Base"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -442,7 +407,7 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_faces_face_.html">"<wbr>Faces/<wbr>Face"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_faces_facemanagementservicebase_.html">"<wbr>Faces/<wbr>Face<wbr>Management<wbr>Service<wbr>Base"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -464,31 +429,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html" class="tsd-kind-icon">Face<wbr>Management<wbr>Service<wbr>Base</a>
+						<a href="_configservicebase_.configservicebase.html" class="tsd-kind-icon">Config<wbr>Service<wbr>Base</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_configservicebase_.configservicebase.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#resources" class="tsd-kind-icon">resources</a>
+								<a href="_configservicebase_.configservicebase.html#resources" class="tsd-kind-icon">resources</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#addface" class="tsd-kind-icon">Add<wbr>Face</a>
+								<a href="_configservicebase_.configservicebase.html#getconfig" class="tsd-kind-icon">Get<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#addfacefromcamera" class="tsd-kind-icon">Add<wbr>Face<wbr>From<wbr>Camera</a>
+								<a href="_configservicebase_.configservicebase.html#getconfigvalue" class="tsd-kind-icon">Get<wbr>Config<wbr>Value</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#getface" class="tsd-kind-icon">Get<wbr>Face</a>
+								<a href="_configservicebase_.configservicebase.html#loadconfig" class="tsd-kind-icon">Load<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#getfaces" class="tsd-kind-icon">Get<wbr>Faces</a>
+								<a href="_configservicebase_.configservicebase.html#saveconfig" class="tsd-kind-icon">Save<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#removeface" class="tsd-kind-icon">Remove<wbr>Face</a>
+								<a href="_configservicebase_.configservicebase.html#setconfig" class="tsd-kind-icon">Set<wbr>Config</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_faces_facemanagementservicebase_.facemanagementservicebase.html#updateface" class="tsd-kind-icon">Update<wbr>Face</a>
+								<a href="_configservicebase_.configservicebase.html#setconfigvalue" class="tsd-kind-icon">Set<wbr>Config<wbr>Value</a>
 							</li>
 						</ul>
 					</li>

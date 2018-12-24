@@ -2,7 +2,7 @@ import { EventEmitter2 as EventEmitter } from "eventemitter2";
 import IAppResources from "../IAppResources";
 
 /**
- * Logs are also emitted via this class.
+ * Logs are sent via this service.
  */
 export default abstract class LogsServiceBase extends EventEmitter {
     /**
@@ -13,6 +13,7 @@ export default abstract class LogsServiceBase extends EventEmitter {
     /**
      * Returns past logs.
      * @param start - Will be passed to winston.
+     * @async
      */
     public abstract async StreamHistory(start?: number): Promise<void>;
 }

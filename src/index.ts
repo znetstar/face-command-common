@@ -10,3 +10,6 @@ export { default as FaceManagementServiceBase } from "./Faces/FaceManagementServ
 export { default as RunCondition, RunConditionType, IncorrectRunConditionTypeToSetFaces } from "./Commands/RunCondition";
 export { default as Status, StatusType } from "./Detection/Status";
 export { default as IAppResources } from "./IAppResources";
+export { default as ConfigServiceBase } from "./ConfigServiceBase";
+export { default as LogsServiceBase } from "./Logs/LogsServiceBase";
+export { default as LogEntry } from "./Logs/LogEntry";

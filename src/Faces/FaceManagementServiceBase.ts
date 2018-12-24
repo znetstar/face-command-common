@@ -45,7 +45,7 @@ export default abstract class FaceManagementServiceBase {
      * @param id - The identifier of the face.
      * @async
      */ 
-    public abstract RemoveFace(id: number): Promise<any>;
+    public abstract RemoveFace(id: number): Promise<void>;
 
     /**
      * Updates a face. 
@@ -54,5 +54,5 @@ export default abstract class FaceManagementServiceBase {
      * @param imageFromCamera - Indicates whether the application should update the face object with a face from the capture source.
      * @async
      */
-    public abstract UpdateFace(face: Face, scanForFace: boolean, imageFromCamera: boolean): Promise<any>;
+    public abstract UpdateFace(face: Face, scanForFace: boolean, imageFromCamera: boolean): Promise<Face>;
 }

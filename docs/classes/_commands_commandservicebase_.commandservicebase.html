@@ -106,9 +106,7 @@
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#addcommand" class="tsd-kind-icon">Add<wbr>Command</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#getcommand" class="tsd-kind-icon">Get<wbr>Command</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#getcommands" class="tsd-kind-icon">Get<wbr>Commands</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="_commands_commandservicebase_.commandservicebase.html#onstatuschange" class="tsd-kind-icon">On<wbr>Status<wbr>Change</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#removecommand" class="tsd-kind-icon">Remove<wbr>Command</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#runcommand" class="tsd-kind-icon">Run<wbr>Command</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commands_commandservicebase_.commandservicebase.html#updatecommand" class="tsd-kind-icon">Update<wbr>Command</a></li>
 							</ul>
 						</section>
@@ -127,7 +125,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L11">Commands/CommandServiceBase.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L12">Commands/CommandServiceBase.ts:12</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -159,7 +157,7 @@
 					<div class="tsd-signature tsd-kind-icon">resources<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_iappresources_.iappresources.html" class="tsd-signature-type">IAppResources</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L17">Commands/CommandServiceBase.ts:17</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L18">Commands/CommandServiceBase.ts:18</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -175,13 +173,13 @@
 					<a name="addcommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Add<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Command<span class="tsd-signature-symbol">(</span>commandType<span class="tsd-signature-symbol">: </span><a href="_commands_commandtypebase_.commandtypebase.html" class="tsd-signature-type">CommandTypeBase</a>, runConditions<span class="tsd-signature-symbol">: </span><a href="_commands_runcondition_.runcondition.html" class="tsd-signature-type">RunCondition</a><span class="tsd-signature-symbol">[]</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Add<wbr>Command<span class="tsd-signature-symbol">(</span>commandType<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, runConditions<span class="tsd-signature-symbol">: </span><a href="_commands_runcondition_.runcondition.html" class="tsd-signature-type">RunCondition</a><span class="tsd-signature-symbol">[]</span>, name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, data<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L29">Commands/CommandServiceBase.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L30">Commands/CommandServiceBase.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +194,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>commandType: <a href="_commands_commandtypebase_.commandtypebase.html" class="tsd-signature-type">CommandTypeBase</a></h5>
+									<h5>commandType: <span class="tsd-signature-type">string</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Type of command that will be run.</p>
 									</div>
@@ -234,7 +232,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L36">Commands/CommandServiceBase.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L37">Commands/CommandServiceBase.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +267,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L42">Commands/CommandServiceBase.ts:42</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L43">Commands/CommandServiceBase.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -285,37 +283,6 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-					<a name="onstatuschange" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagProtected">Protected</span> <span class="tsd-flag ts-flagAbstract">Abstract</span> On<wbr>Status<wbr>Change</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-						<li class="tsd-signature tsd-kind-icon">On<wbr>Status<wbr>Change<span class="tsd-signature-symbol">(</span>Status<span class="tsd-signature-symbol">: </span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L70">Commands/CommandServiceBase.ts:70</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Event handler for the &quot;StatusChange&quot; event of the detection service.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>Status: <a href="_detection_status_.status.html" class="tsd-signature-type">Status</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The new state of the detection service.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="removecommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Remove<wbr>Command</h3>
@@ -326,7 +293,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L48">Commands/CommandServiceBase.ts:48</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L49">Commands/CommandServiceBase.ts:49</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -348,60 +315,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="runcommand" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Run<wbr>Command</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Run<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a>, status<span class="tsd-signature-symbol">: </span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L64">Commands/CommandServiceBase.ts:64</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Runs a command with a given state of the detection service.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>command: <a href="_commands_command_.command.html" class="tsd-signature-type">Command</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The command to be run.</p>
-									</div>
-								</li>
-								<li>
-									<h5>status: <a href="_detection_status_.status.html" class="tsd-signature-type">Status</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The state of the detector service.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<ul>
-								<li>Will returns a function which may resolve with arbitrary data.</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="updatecommand" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Update<wbr>Command</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Update<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">Update<wbr>Command<span class="tsd-signature-symbol">(</span>command<span class="tsd-signature-symbol">: </span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Commands/CommandServiceBase.ts#L55">Commands/CommandServiceBase.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Commands/CommandServiceBase.ts#L56">Commands/CommandServiceBase.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -422,7 +345,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_commands_command_.command.html" class="tsd-signature-type">Command</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -448,6 +371,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_commands_runcondition_.html">"<wbr>Commands/<wbr>Run<wbr>Condition"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="../modules/_configservicebase_.html">"<wbr>Config<wbr>Service<wbr>Base"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_constructible_.html">"<wbr>Constructible"</a>
@@ -500,14 +426,8 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commands_commandservicebase_.commandservicebase.html#getcommands" class="tsd-kind-icon">Get<wbr>Commands</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
-								<a href="_commands_commandservicebase_.commandservicebase.html#onstatuschange" class="tsd-kind-icon">On<wbr>Status<wbr>Change</a>
-							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commands_commandservicebase_.commandservicebase.html#removecommand" class="tsd-kind-icon">Remove<wbr>Command</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_commands_commandservicebase_.commandservicebase.html#runcommand" class="tsd-kind-icon">Run<wbr>Command</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commands_commandservicebase_.commandservicebase.html#updatecommand" class="tsd-kind-icon">Update<wbr>Command</a>

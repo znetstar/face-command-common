@@ -1,8 +1,5 @@
 import Command from "./Command";
-import CommandTypeBase from "./CommandTypeBase";
 import RunCondition from "./RunCondition";
-import DetectionServiceBase from "../Detection/DetectionServiceBase";
-import Status from "../Detection/Status";
 import IAppResources from "../IAppResources";
  
 /**
@@ -26,12 +23,12 @@ export default abstract class CommandServiceBase {
      * @param data - Arbitrary data passed to the command.
      * @async
      */
-    public abstract AddCommand(commandType: CommandTypeBase, runConditions: RunCondition[], name: string, data?: any): Promise<Command>;
+    public abstract AddCommand(commandType: string, runConditions: RunCondition[], name: string, data?: any): Promise<Command>;
     
     /**
      * Retrieves a command.
      * @param id - The identifier of the command to retrieve.
-     * @async
+     * @async 
      */
     public abstract GetCommand(id: number): Promise<Command>;
 
@@ -52,20 +49,5 @@ export default abstract class CommandServiceBase {
      * @param command - Command with properties to be updated.
      * @async
      */
-    public abstract UpdateCommand(command: Command): Promise<void>;
-
-    /**
-     * Runs a command with a given state of the detection service.
-     * @param command - The command to be run.
-     * @param status - The state of the detector service.
-     * @returns - Will returns a function which may resolve with arbitrary data.
-     * @async
-     */
-    public abstract RunCommand(command: Command, status: Status): Promise<any>;
-
-    /**
-     * Event handler for the "StatusChange" event of the detection service.
-     * @param Status - The new state of the detection service.
-     */
-    protected abstract OnStatusChange(Status: Status): void;
+    public abstract UpdateCommand(command: Command): Promise<Command>;
 }

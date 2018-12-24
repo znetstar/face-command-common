@@ -106,17 +106,9 @@
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
-							<h3>Accessors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-get-signature tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#isdetectionrunning" class="tsd-kind-icon">Is<wbr>Detection<wbr>Running</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#addstatus" class="tsd-kind-icon">Add<wbr>Status</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#detectchanges" class="tsd-kind-icon">Detect<wbr>Changes</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#getstatus" class="tsd-kind-icon">Get<wbr>Status</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#isdetectionrunning" class="tsd-kind-icon">Is<wbr>Detection<wbr>Running</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#startdetection" class="tsd-kind-icon">Start<wbr>Detection</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#statushistory" class="tsd-kind-icon">Status<wbr>History</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_detection_detectionservicebase_.detectionservicebase.html#stopdetection" class="tsd-kind-icon">Stop<wbr>Detection</a></li>
@@ -157,7 +149,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides EventEmitter2.__constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L10">Detection/DetectionServiceBase.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L9">Detection/DetectionServiceBase.ts:9</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -186,7 +178,7 @@
 					<div class="tsd-signature tsd-kind-icon">resources<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_iappresources_.iappresources.html" class="tsd-signature-type">IAppResources</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L14">Detection/DetectionServiceBase.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L13">Detection/DetectionServiceBase.ts:13</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -197,18 +189,18 @@
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Accessors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-get-signature tsd-parent-kind-class">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="isdetectionrunning" class="tsd-anchor"></a>
-					<h3>Is<wbr>Detection<wbr>Running</h3>
-					<ul class="tsd-signatures tsd-kind-get-signature tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">get</span> IsDetectionRunning<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Is<wbr>Detection<wbr>Running</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Is<wbr>Detection<wbr>Running<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L39">Detection/DetectionServiceBase.ts:39</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L31">Detection/DetectionServiceBase.ts:31</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -216,115 +208,10 @@
 									<p>Indicates if detection is currently running.</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="addstatus" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Add<wbr>Status</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Add<wbr>Status<span class="tsd-signature-symbol">(</span>statusType<span class="tsd-signature-symbol">: </span><a href="../enums/_detection_status_.statustype.html" class="tsd-signature-type">StatusType</a>, time<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Date</span>, recognizedFaces<span class="tsd-signature-symbol">: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L45">Detection/DetectionServiceBase.ts:45</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Creates a status object indicating a change in state.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>statusType: <a href="../enums/_detection_status_.statustype.html" class="tsd-signature-type">StatusType</a></h5>
-								</li>
-								<li>
-									<h5>time: <span class="tsd-signature-type">Date</span></h5>
-								</li>
-								<li>
-									<h5>recognizedFaces: <a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="detectchanges" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Detect<wbr>Changes</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Detect<wbr>Changes<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L23">Detection/DetectionServiceBase.ts:23</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>The function that will be run to capture the image from the capture source and processs it for faces.
-									The &quot;frequency&quot; property of the &quot;options&quot; paramater controls how frequent this function should be called.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>options: <a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Options that will be used during detection.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getstatus" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Get<wbr>Status</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Get<wbr>Status<span class="tsd-signature-symbol">(</span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L53">Detection/DetectionServiceBase.ts:53</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Retrieves a status object.</p>
-								</div>
-								<dl class="tsd-comment-tags">
-									<dt>async</dt>
-									<dd></dd>
-								</dl>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>id: <span class="tsd-signature-type">number</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The id of the status to retrieve;</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="_detection_status_.status.html" class="tsd-signature-type">Status</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">boolean</span>
+							</h4>
 						</li>
 					</ul>
 				</section>
@@ -332,13 +219,13 @@
 					<a name="startdetection" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Start<wbr>Detection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Start<wbr>Detection<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Start<wbr>Detection<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L34">Detection/DetectionServiceBase.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L26">Detection/DetectionServiceBase.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -355,7 +242,10 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">void</span>
+							</h4>
 						</li>
 					</ul>
 				</section>
@@ -369,7 +259,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L62">Detection/DetectionServiceBase.ts:62</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L40">Detection/DetectionServiceBase.ts:40</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -404,13 +294,13 @@
 					<a name="stopdetection" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> Stop<wbr>Detection</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">Stop<wbr>Detection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">Stop<wbr>Detection<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/d22b484/src/Detection/DetectionServiceBase.ts#L28">Detection/DetectionServiceBase.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/5be8bf3/src/Detection/DetectionServiceBase.ts#L20">Detection/DetectionServiceBase.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -418,7 +308,10 @@
 									<p>Stops capturing from the capture source</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span>
+								<span class="tsd-signature-symbol"> | </span>
+								<span class="tsd-signature-type">void</span>
+							</h4>
 						</li>
 					</ul>
 				</section>
@@ -929,6 +822,9 @@
 						<a href="../modules/_commands_runcondition_.html">"<wbr>Commands/<wbr>Run<wbr>Condition"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
+						<a href="../modules/_configservicebase_.html">"<wbr>Config<wbr>Service<wbr>Base"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_constructible_.html">"<wbr>Constructible"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -970,17 +866,8 @@
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
 								<a href="_detection_detectionservicebase_.detectionservicebase.html#resources" class="tsd-kind-icon">resources</a>
 							</li>
-							<li class=" tsd-kind-get-signature tsd-parent-kind-class">
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_detection_detectionservicebase_.detectionservicebase.html#isdetectionrunning" class="tsd-kind-icon">Is<wbr>Detection<wbr>Running</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_detection_detectionservicebase_.detectionservicebase.html#addstatus" class="tsd-kind-icon">Add<wbr>Status</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_detection_detectionservicebase_.detectionservicebase.html#detectchanges" class="tsd-kind-icon">Detect<wbr>Changes</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_detection_detectionservicebase_.detectionservicebase.html#getstatus" class="tsd-kind-icon">Get<wbr>Status</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_detection_detectionservicebase_.detectionservicebase.html#startdetection" class="tsd-kind-icon">Start<wbr>Detection</a>

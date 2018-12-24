@@ -13,6 +13,13 @@ export default abstract class CommandTypeBase {
 
     }
     
+    /** 
+     * Returns the name of the CommandType.
+     */
+    public toString() {
+        return Object.getPrototypeOf(this).constructor.name;
+    }
+
     /**
      * The function that will be run when the command is triggered.
      * @param options - Options that will be used when the command is triggered.

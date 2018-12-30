@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.1] - 2018-12-30
+### Added
+- Adds autostart to random.
+
 ## [1.2.0] - 2018-12-30
 ### Added
 - Adds an property for loading autostart faces.

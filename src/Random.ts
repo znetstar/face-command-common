@@ -152,6 +152,6 @@ export default class Random {
      * Generates a random `DetectionOptions` object.
      */
     public detectionOptions(): DetectionOptions {
-        return new DetectionOptions(this.chance.floating(), this.eigenFaceRecognizerOptions(), this.faces());
+        return new DetectionOptions(this.chance.floating(), this.eigenFaceRecognizerOptions(), this.faces(), this.chance.bool());
     }
 }

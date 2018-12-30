@@ -97,6 +97,7 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_detection_detectionoptions_.detectionoptions.html#autostartfaces" class="tsd-kind-icon">autostart<wbr>Faces</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_detection_detectionoptions_.detectionoptions.html#eigenfacerecognizeroptions" class="tsd-kind-icon">eigen<wbr>Face<wbr>Recognizer<wbr>Options</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_detection_detectionoptions_.detectionoptions.html#faces" class="tsd-kind-icon">faces</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_detection_detectionoptions_.detectionoptions.html#frequency" class="tsd-kind-icon">frequency</a></li>
@@ -111,13 +112,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Detection<wbr>Options<span class="tsd-signature-symbol">(</span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, eigenFaceRecognizerOptions<span class="tsd-signature-symbol">: </span><a href="_detection_eigenfacerecognizeroptions_.eigenfacerecognizeroptions.html" class="tsd-signature-type">EigenFaceRecognizerOptions</a>, faces<span class="tsd-signature-symbol">?: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Detection<wbr>Options<span class="tsd-signature-symbol">(</span>frequency<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, eigenFaceRecognizerOptions<span class="tsd-signature-symbol">: </span><a href="_detection_eigenfacerecognizeroptions_.eigenfacerecognizeroptions.html" class="tsd-signature-type">EigenFaceRecognizerOptions</a>, faces<span class="tsd-signature-symbol">?: </span><a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span>, autostartFaces<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/38791a1/src/Detection/DetectionOptions.ts#L7">Detection/DetectionOptions.ts:7</a></li>
+									<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/dc892b0/src/Detection/DetectionOptions.ts#L7">Detection/DetectionOptions.ts:7</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -148,6 +149,14 @@
 										</div>
 									</div>
 								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> autostartFaces: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> =&nbsp;false</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Adds the faces that would be loaded on start.</p>
+										</div>
+									</div>
+								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="_detection_detectionoptions_.detectionoptions.html" class="tsd-signature-type">DetectionOptions</a></h4>
 						</li>
@@ -157,12 +166,27 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="autostartfaces" class="tsd-anchor"></a>
+					<h3>autostart<wbr>Faces</h3>
+					<div class="tsd-signature tsd-kind-icon">autostart<wbr>Faces<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/dc892b0/src/Detection/DetectionOptions.ts#L15">Detection/DetectionOptions.ts:15</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Adds the faces that would be loaded on start.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="eigenfacerecognizeroptions" class="tsd-anchor"></a>
 					<h3>eigen<wbr>Face<wbr>Recognizer<wbr>Options</h3>
 					<div class="tsd-signature tsd-kind-icon">eigen<wbr>Face<wbr>Recognizer<wbr>Options<span class="tsd-signature-symbol">:</span> <a href="_detection_eigenfacerecognizeroptions_.eigenfacerecognizeroptions.html" class="tsd-signature-type">EigenFaceRecognizerOptions</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/38791a1/src/Detection/DetectionOptions.ts#L14">Detection/DetectionOptions.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/dc892b0/src/Detection/DetectionOptions.ts#L15">Detection/DetectionOptions.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -177,7 +201,7 @@
 					<div class="tsd-signature tsd-kind-icon">faces<span class="tsd-signature-symbol">:</span> <a href="_faces_face_.face.html" class="tsd-signature-type">Face</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/38791a1/src/Detection/DetectionOptions.ts#L14">Detection/DetectionOptions.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/dc892b0/src/Detection/DetectionOptions.ts#L15">Detection/DetectionOptions.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -192,7 +216,7 @@
 					<div class="tsd-signature tsd-kind-icon">frequency<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/38791a1/src/Detection/DetectionOptions.ts#L14">Detection/DetectionOptions.ts:14</a></li>
+							<li>Defined in <a href="https://github.com/znetstar/face-command-common/blob/dc892b0/src/Detection/DetectionOptions.ts#L15">Detection/DetectionOptions.ts:15</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -274,6 +298,9 @@
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
 								<a href="_detection_detectionoptions_.detectionoptions.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_detection_detectionoptions_.detectionoptions.html#autostartfaces" class="tsd-kind-icon">autostart<wbr>Faces</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="_detection_detectionoptions_.detectionoptions.html#eigenfacerecognizeroptions" class="tsd-kind-icon">eigen<wbr>Face<wbr>Recognizer<wbr>Options</a>

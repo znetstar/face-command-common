@@ -15,4 +15,9 @@ export default class DetectionOptions {
     constructor(public frequency: number, public eigenFaceRecognizerOptions: EigenFaceRecognizerOptions, public faces: Face[] = [], public autostartFaces: boolean = false) {
         
     }
+
+    /**
+     * Additional data that will be retained through each detection cycle.
+     */
+    public state: any;
 }

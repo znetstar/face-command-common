@@ -1,6 +1,6 @@
 {
   "name": "face-command-common",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "This package contains the common types and methods used in Face Command",
   "main": "lib/index.js",
   "scripts": {

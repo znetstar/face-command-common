@@ -13,11 +13,11 @@ export default abstract class DetectionServiceBase extends EventEmitter2 {
     constructor(protected resources: IAppResources) {
         super();
     }
-    
+
     /**
      * Stops capturing from the capture source
      */
-    public abstract  StopDetection(): Promise<void>|void;
+    public abstract StopDetection(): Promise<void>|void;
 
     /**
      * Begins capturing from the capture source.

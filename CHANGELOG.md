@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.0.1] - 2019-01-04
+### Added
+- Status now includes the brightness of the frame. The order of the arguments to the constructor have been changed.
+- Brightness being too low is now a status type.
+
+### Changed
+- Detection options now contains a property for additonal data.
+
 ## [1.3.0] - 2019-01-04
 ### Added
 - Adds a unique ID to log entry.

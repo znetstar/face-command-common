@@ -55,7 +55,7 @@ export default class Random {
      * Generates a random `Face`.
      */
     public face(): Face {
-        return new Face(this.chance.integer(), this.chance.string(), this.bytes(), this.chance.bool())
+        return new Face(this.chance.integer({ min: 0 }), this.chance.string(), this.bytes(), this.chance.bool())
     } 
 
     /**
@@ -73,7 +73,7 @@ export default class Random {
      * Generates a random `RunCondition` of a random type with random `Face` objects.
      */
     public runCondition(): RunCondition {
-        return new RunCondition(this.runConditionType(), this.faces(), this.chance.integer(), this.chance.integer());
+        return new RunCondition(this.runConditionType(), this.faces(), this.chance.integer(), this.chance.integer({ min: 0 }));
     }
 
     /**
@@ -91,7 +91,7 @@ export default class Random {
      * Generates a random `Command` object with randomly generated `RunCondition` object.
      */
     public command(): Command {
-        return new Command(this.chance.integer(), this.chance.name(), this.chance.string(), this.runConditions(), this.bytes());
+        return new Command(this.chance.integer({ min: 0 }), this.chance.name(), this.chance.string(), this.runConditions(), this.bytes());
     }
 
     /**
@@ -109,7 +109,7 @@ export default class Random {
      * Generates a random `Status` object with a random `StatusType`.
      */
     public status(): Status {
-        return new Status(this.chance.integer(), this.statusType(), this.chance.date(), this.faces());
+        return new Status(this.chance.integer({ min: 0 }), this.statusType(), this.chance.date(), this.chance.floating({ min: 0, max: 1 }), this.faces());
     }
 
     /**
@@ -127,7 +127,7 @@ export default class Random {
      * Generates a random `LogEntry`.
      */
     public logEntry(): LogEntry {
-        return new LogEntry(this.chance.string(), this.chance.string(), this.chance.date(), this.bytes());
+        return new LogEntry(this.chance.string(), this.chance.string(), this.chance.date(), this.bytes(), this.bytes());
     }
 
     /**

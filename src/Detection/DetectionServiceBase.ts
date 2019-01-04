@@ -13,11 +13,11 @@ export default abstract class DetectionServiceBase extends EventEmitter2 {
     constructor(protected resources: IAppResources) {
         super();
     }
-    
+
     /**
      * Stops capturing from the capture source
      */
-    public abstract  StopDetection(): Promise<void>|void;
+    public abstract StopDetection(): Promise<void>|void;
 
     /**
      * Begins capturing from the capture source.
@@ -29,6 +29,11 @@ export default abstract class DetectionServiceBase extends EventEmitter2 {
      * Indicates if detection is currently running.
      */
     public abstract IsDetectionRunning(): Promise<boolean>|boolean;
+
+    /**
+     * Returns the last status.
+     */
+    public abstract GetLastStatus(): Promise<Status>|Status;
 
     /**
      * Searches for entries between a start and end date.

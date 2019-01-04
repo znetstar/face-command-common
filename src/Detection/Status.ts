@@ -8,7 +8,8 @@ export enum StatusType {
     FacesDetected = 1,
     FacesRecognized = 2,
     FacesNoLongerRecognized = 3,
-    FacesNoLongerDetected = 4
+    FacesNoLongerDetected = 4,
+    BrightnessTooLow = 5
 }
 
 /**
@@ -20,7 +21,8 @@ const StatusText = new Map<StatusType, string>([
     [ StatusType.FacesDetected, "Faces have been detected" ],
     [ StatusType.FacesRecognized, "Faces have been recognized" ],
     [ StatusType.FacesNoLongerRecognized, "Faces are still being detected are no longer being recognized" ],
-    [ StatusType.FacesNoLongerDetected, "Faces are no longer being detected" ]
+    [ StatusType.FacesNoLongerDetected, "Faces are no longer being detected" ],
+    [ StatusType.BrightnessTooLow, "Brightness is too low to detect faces" ]
 ]);
 
 Object.freeze(StatusText);
@@ -47,12 +49,13 @@ export default class Status {
     /**
      * 
      * @param id - Unqiue ID for this status object.
-     * @param statusType - State of {@link IDetectionService}.
+     * @param statusType - State of {@link DetectionServiceBase}.
      * @param time - When the status occured.
-     * @param recognizedFaceIDs - List of faces detected by {@link IDetectionService}.
+     * @param recognizedFaceIDs - List of faces detected by {@link DetectionServiceBase}.
+     * @param brightness - Brightness of the frame that created the status.
      * @param lastStatus - The last status that occured.
      */
-    constructor(public id: number, public statusType: StatusType, public time: Date = new Date(), public recognizedFaces: Face[] = []) {
+    constructor(public id: number, public statusType: StatusType, public time: Date = new Date(), public brightness: number, public recognizedFaces: Face[] = []) {
         
     }
 }

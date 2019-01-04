@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.3.0] - 2019-01-04
+### Added
+- Adds a unique ID to log entry.
+
 ## [1.2.1] - 2018-12-30
 ### Added
 - Adds autostart to random.
